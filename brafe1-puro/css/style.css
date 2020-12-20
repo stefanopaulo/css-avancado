@@ -6,7 +6,74 @@ body, h1, h2, h3, ul {
 
 body {
     font-family: Georgia, serif;
+    font-size: 16px;
     color: #252525;
 }
 
 /* menu */
+.menu {
+    background: #252525;
+    padding: 20px 0;
+}
+
+.menu-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix::after, .clearfix::before {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.menu-logo {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.menu-nav {
+    float: right;
+    margin-right: 10px;
+}
+
+.menu-nav li {
+    display: inline-block;
+}
+
+.menu-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+}
+
+/* intro */
+.intro {
+    background: url('../img/bg-intro.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.intro h1::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+.intro p {
+    font-style: italic;
+    font-size: 1.125em;
+}
