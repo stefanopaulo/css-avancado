@@ -77,3 +77,53 @@ body {
     font-style: italic;
     font-size: 1.125em;
 }
+
+/* sobre */
+.sobre {
+    padding: 60px 0;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 60px;
+}
+
+.sobre > p {
+    max-width: 460px;
+    font-size: 1.25em;
+    line-height: 1.4em;
+    font-style: italic;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.sobre-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sobre-item {
+    max-width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+
+.sobre-item img {
+    display: block;
+    max-width: 100%
+}
+
+.sobre-item h3 {
+    font-size: 2.25em;
+    line-height: 1em;
+    background: #252525;
+    color: #fff;
+    width: 220px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    position: relative;
+    top: -25px;
+}
