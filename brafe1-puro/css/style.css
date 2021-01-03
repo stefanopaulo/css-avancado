@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+/* geral */
 body, h1, h2, h3, ul {
     padding: 0;
     margin: 0;
@@ -328,4 +329,113 @@ h2.produtos-mineiro::before {
     float: right;
     margin: 0 10px;
     display: block;
+}
+
+/* --- responsivo --- */
+
+@media (min-width: 768px) and (max-width: 960px) {
+    .sobre-container {
+        max-width: 720px;
+    }
+    
+    .sobre-item {
+        width: 340px;
+    }
+
+    .produtos-container {
+        max-width: 720px;
+    }
+
+    .produtos-item {
+        width: 220px;
+    }
+
+    .locais {
+        max-width: 720px;
+    }
+
+    .locais-item > div, .locais-item img {
+        width: 340px;
+    }
+
+    .newsletter-container {
+        max-width: 720px;
+    }
+
+    .newsletter-item,
+    .newsletter form,
+    .newsletter input {
+        width: 340px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        text-align: center;
+    }
+
+    a.menu-logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .menu-nav {
+        float: none;
+        clear: both;
+    }
+
+    .intro {
+        padding: 60px 0;
+    }
+
+    .sobre-container {
+        max-width: 300px;
+    }
+
+    .sobre-item {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .produtos-container {
+        max-width: 300px;
+    }
+
+    .produtos-item {
+        margin: 0 auto 20px auto;
+    }
+
+    .locais {
+        max-width: 300px;
+    }
+
+    .locais-item > div, .locais-item img {
+        width: 300px;
+        margin: 0px;
+    }
+
+    .newsletter-container {
+        max-width: 300px;
+    }
+
+    .newsletter-item,
+    .newsletter form,
+    .newsletter input {
+        width: 300px;
+        margin: 10px 0 0 0;
+    }
+
+    .footer-container {
+        max-width: 300px;
+    }
+
+    .footer p {
+        float: none;
+        margin: 0px;
+    }
+
+    .footer img {
+        float: none;
+        margin: 20px 0;
+    }
 }
