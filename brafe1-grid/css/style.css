@@ -23,12 +23,24 @@ img {
 /* menu */
 .menu {
     background: #252525;
+    padding: 15px 0;
+}
+
+.menu-nav ul {
+    float: right;
+}
+
+.menu-nav ul li {
+    display: inline-block;
 }
 
 .menu-nav a {
+    display: block;
     text-decoration: none;
     color: #fff;
     font-size: 1.125em;
+    padding: 10px;
+    margin-left: 10px;
 }
 
 /* intro */
@@ -36,6 +48,8 @@ img {
     background: url('../img/bg-intro.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
+    padding: 150px 0;
+    text-align: center;
 }
 
 .intro h1 {
@@ -49,6 +63,7 @@ img {
     width: 20px;
     height: 4px;
     background: #fff;
+    margin: 10px auto;
 }
 
 .intro p {
@@ -57,20 +72,23 @@ img {
 }
 
 /* sobre */
+.sobre {
+    padding: 60px 0;
+}
+
 .sobre h2 {
     text-align: center;
     font-size: 2.25em;
+    margin-bottom: 60px;;
 }
 
 .sobre > p {
     font-size: 1.25em;
     line-height: 1.4em;
     font-style: italic;
+    max-width: 460px;
+    margin: 20px auto;
     text-align: center;
-}
-
-.sobre-item img {
-    display: block;
 }
 
 .sobre-item h3 {
@@ -81,6 +99,10 @@ img {
     font-style: italic;
     font-weight: normal;
     text-align: center;
+    position: relative;
+    width: 220px;
+    padding: 5px 0 10px 0;
+    top: -25px;
 }
 
 /* produtos */
@@ -88,11 +110,13 @@ img {
     background: #e7e4d8;
     border-top: 3px solid #d6d3c8;
     border-bottom: 3px solid #d6d3c8;
+    padding: 60px 0;
 }
 
 .produtos-item h2 {
     text-align: center;
     font-size: 2.25em;
+    margin-bottom: 20px;
 }
 
 .produtos-item h2::before {
@@ -104,6 +128,11 @@ img {
     border-radius: 50%;
     border: 5px solid #e7e4d8;
     box-shadow: 0 0 0 10px currentColor;
+    margin: 20px auto;
+}
+
+.produtos-item {
+    margin-bottom: 40px;
 }
 
 h2.produtos-paulista::before {
@@ -133,17 +162,29 @@ h2.produtos-mineiro::before {
     text-transform: uppercase;
     font-size: 1.125em;
     font-weight: bold;
+    padding: 15px 0;
+    margin: 0 auto;
 }
 
 /* locais */
+.locais {
+    padding: 60px 0;
+}
+
+.locais-item {
+    margin-bottom: 40px;
+}
 
 .locais-item h2 {
     font-size: 2.25em;
+    margin-bottom: 20px;
 }
 
 .locais-item p {
     font-size: 1.125em;
     line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
 }
 
 .locais-item a {
@@ -152,11 +193,13 @@ h2.produtos-mineiro::before {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.125em;
+    padding: 10px 20px;
 }
 
 /* newsletter */
 .newsletter {
     background: #e7e4d8;
+    padding: 30px 0;
 }
 
 .newsletter-item h2 {
@@ -178,6 +221,9 @@ h2.produtos-mineiro::before {
     font-size: 1.5em;
     font-style: italic;
     font-family: Georgia, serif;
+    width: calc(100% - 140px);
+    padding: 10px;
+    float: left;
 }
 
 .newsletter form button {
@@ -188,11 +234,18 @@ h2.produtos-mineiro::before {
     color: #fff;
     border: 0;
     cursor: pointer;
+    width: 140px;
+    padding: 13px 0;
 }
 
 /* footer */
 .footer {
     background: #d6d3c8;
+    padding: 40px 0;
+}
+
+.footer img {
+    float: right;
 }
 
 .footer p {
@@ -200,8 +253,30 @@ h2.produtos-mineiro::before {
     line-height: 1.4em;
 }
 
-.footer img {
-    display: block;
-}
-
 /* --- responsivo --- */
+
+@media (max-width: 768px) {
+    .menu-nav ul {
+        float: none;
+    }
+
+    .menu-nav ul li a {
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 8px;
+    }
+
+    .intro {
+        padding: 60px 0;
+    }
+
+    .newsletter form input {
+        font-size: 1em;
+        padding: 14px;
+    }
+
+    .footer img {
+        float: none;
+        margin-top: 20px;
+    }
+}
