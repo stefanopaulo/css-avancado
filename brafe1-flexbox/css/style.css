@@ -15,13 +15,48 @@ body {
     color: #252525;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 /* menu */
 .menu {
     background: #252525;
+    padding: 15px 0;
+}
+
+.menu-nav {
+    flex: 1;
+    align-self: center;
+}
+
+.menu-nav ul {
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav ul li a {
+    padding: 10px;
 }
 
 .menu-nav a {
-    text-decoration: none;
     color: #fff;
     font-size: 1.125em;
 }
@@ -31,6 +66,8 @@ body {
     background: url('../img/bg-intro.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
+    padding: 150px 0;
+    text-align: center;
 }
 
 .intro h1 {
@@ -44,6 +81,7 @@ body {
     width: 20px;
     height: 4px;
     background: #fff;
+    margin: 10px auto;
 }
 
 .intro p {
@@ -52,9 +90,14 @@ body {
 }
 
 /* sobre */
+.sobre {
+    padding: 60px 0;
+}
+
 .sobre h2 {
     text-align: center;
     font-size: 2.25em;
+    margin-bottom: 60px;
 }
 
 .sobre > p {
@@ -62,6 +105,13 @@ body {
     line-height: 1.4em;
     font-style: italic;
     text-align: center;
+    margin: 20px auto;
+    max-width: 460px;
+}
+
+.sobre-item {
+    flex: 1;
+    margin: 0 10px;
 }
 
 .sobre-item img {
@@ -79,6 +129,8 @@ body {
     text-align: center;
     position: relative;
     top: -25px;
+    width: 220px;
+    padding: 5px 0 10px 0;
 }
 
 /* produtos */
@@ -130,6 +182,7 @@ h2.produtos-mineiro::before {
     text-transform: uppercase;
     font-size: 1.125em;
     font-weight: bold;
+    width: 180px;
 }
 
 /* locais */
