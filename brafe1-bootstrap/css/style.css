@@ -15,9 +15,33 @@ body {
     color: #252525;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /* menu */
 .menu {
     background: #252525;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.menu-nav ul {
+    float: right;
+}
+
+.menu-nav ul li {
+    display: inline-block;
 }
 
 .menu-nav a {
@@ -26,16 +50,25 @@ body {
     font-size: 1.125em;
 }
 
+.menu-nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+}
+
 /* intro */
 .intro {
     background: url('../img/bg-intro.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
+    padding: 150px 0;
+    text-align: center;
 }
 
 .intro h1 {
     text-transform: uppercase;
     font-size: 3em;
+    font-weight: bold;
 }
 
 .intro h1::after {
@@ -44,6 +77,7 @@ body {
     width: 20px;
     height: 4px;
     background: #fff;
+    margin: 20px auto;
 }
 
 .intro p {
@@ -52,9 +86,16 @@ body {
 }
 
 /* sobre */
+.sobre {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .sobre h2 {
     text-align: center;
     font-size: 2.25em;
+    margin-bottom: 60px;
+    font-weight: bold;
 }
 
 .sobre > p {
@@ -62,11 +103,8 @@ body {
     line-height: 1.4em;
     font-style: italic;
     text-align: center;
-}
-
-.sobre-item img {
-    display: block;
-    max-width: 100%
+    max-width: 460px;
+    margin: 20px auto;
 }
 
 .sobre-item h3 {
@@ -79,6 +117,8 @@ body {
     text-align: center;
     position: relative;
     top: -25px;
+    width: 220px;
+    padding: 5px 0 10px 0;
 }
 
 /* produtos */
@@ -86,11 +126,18 @@ body {
     background: #e7e4d8;
     border-top: 3px solid #d6d3c8;
     border-bottom: 3px solid #d6d3c8;
+    padding: 60px 0;
+}
+
+.produtos-item {
+    margin-bottom: 40px;
 }
 
 .produtos-item h2 {
     text-align: center;
     font-size: 2.25em;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .produtos-item h2::before {
@@ -102,6 +149,7 @@ body {
     border-radius: 50%;
     border: 5px solid #e7e4d8;
     box-shadow: 0 0 0 10px currentColor;
+    margin: 20px auto;
 }
 
 h2.produtos-paulista::before {
@@ -119,6 +167,7 @@ h2.produtos-mineiro::before {
 .produtos-item p {
     font-size: 0.875em;
     line-height: 1.4em;
+    margin-bottom: 40px;
 }
 
 .produtos-btn {
@@ -130,17 +179,38 @@ h2.produtos-mineiro::before {
     text-transform: uppercase;
     font-size: 1.125em;
     font-weight: bold;
+    width: 180px;
+    padding: 15px 0;
+    margin: 20px auto 0 auto;
+}
+
+.produtos-btn:hover {
+    text-decoration: none;
+    color: #C17139;
+    border-color: #C17139;;
 }
 
 /* locais */
+.locais {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.locais-item {
+    margin-bottom: 40px;
+}
 
 .locais-item h2 {
     font-size: 2.25em;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .locais-item p {
     font-size: 1.125em;
     line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 20px;
 }
 
 .locais-item a {
@@ -149,20 +219,33 @@ h2.produtos-mineiro::before {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.125em;
+    width: 180px;
+    text-align: center;
+    padding: 10px 20px;
 }
 
 /* newsletter */
 .newsletter {
     background: #e7e4d8;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .newsletter-item h2 {
     font-size: 2.25em;
+    font-weight: bold;
 }
 
 .newsletter-item p {
     font-size: 1.5em;
     font-style: italic;
+}
+
+.newsletter form {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .newsletter form label {
@@ -175,6 +258,8 @@ h2.produtos-mineiro::before {
     font-size: 1.5em;
     font-style: italic;
     font-family: Georgia, serif;
+    align-self: flex-start;
+    padding: 10px;
 }
 
 .newsletter form button {
@@ -185,11 +270,15 @@ h2.produtos-mineiro::before {
     color: #fff;
     border: 0;
     cursor: pointer;
+    align-self: flex-start;
+    padding: 13px;
 }
 
 /* footer */
 .footer {
     background: #d6d3c8;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .footer p {
@@ -197,8 +286,27 @@ h2.produtos-mineiro::before {
     line-height: 1.4em;
 }
 
-.footer img {
-    display: block;
+.footer-img {
+    float: right;
 }
 
 /* --- responsivo --- */
+@media (max-width: 768px) {
+    .menu-nav ul {
+        float: none;
+    }
+
+    .menu-nav ul li a {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .intro {
+        padding: 60px 0;
+    }
+
+    .footer-img {
+        float: none;
+        margin-top: 20px;
+    }
+}
