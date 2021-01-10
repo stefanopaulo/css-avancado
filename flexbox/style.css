@@ -1,0 +1,24 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section > div {
+    background: tomato;
+    margin: 10px;
+    padding: 0 10px;
+    max-width: 420px;
+    flex: 1;
+}
+
+.item-1 {
+    order: 1;
+}
+
+.item-2 {
+    order: 2;
+}
+
+.item-3 {
+    order: 0;
+}
